@@ -1,0 +1,4 @@
+when to use?
+- dealing with things like permutation and combination
+- non adjusment collections
+

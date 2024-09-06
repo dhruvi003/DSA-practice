@@ -1,0 +1,47 @@
+The memory allocation for funtion occurs in stack
+
+while the function is not finished executing, it'll remain in stack
+
+when the function gets executed, it is removed from the stack
+and flow of program is restored to where the function was called.
+
+
+when we're making a repetition, or a function is callling itself
+
+base condition 
+which is simple if condition, when the recursion stops making calls
+
+if no base condition, it'll give stack overflow error
+
+WHY recursion??
+- helps in solving bigger and complex problem in simple way
+- convert recursion solution into iteration easily
+- space complexity is not contstant
+
+
+Tail recursion
+in a function when it returns a last statement, it is called as tail recursion
+eg. PrintN(int n){
+    if n=1; return n;
+    else{
+        return PrintN(n-1); //here this is a tail recursion
+    }
+}
+
+if we were to print something like
+{
+    return PrintN(n-1) + PrintN(n-2) // not a tail recursion
+}
+
+Time complexity : (golden ratio) ^ n
+
+
+Recursion types:
+linear
+divide and conquer
+
+n--
+-> it will pass value of n and then substract it
+
+--n
+-> substract first and then pass

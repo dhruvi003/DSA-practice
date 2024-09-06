@@ -1,0 +1,20 @@
+It is comparison sort method
+- What we do?
+    1) Compare two adjacent elements
+    2) If not in order -> Swap elements
+
+- After first iteration, the largest element comes largest
+
+AKA, sinking sort or exchange sort
+
+Best case : Sorted --> O(n)
+-> when j never swaps for any perticular value of 'i', it means that array is Sorted
+
+Worst case : Reverse --> O(n^2)
+
+Space : O(1)
+
+Inplace sorting algo as we don't havae to create a new array
+
+Stable Sorting algorithm
+-> Order should be the same when the value is the same

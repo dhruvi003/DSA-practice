@@ -1,0 +1,62 @@
+- collection of characters
+- String is class of java
+
+concept 0 :
+
+String name = "Nisarg"
+here, the string 'nisarg' is an object
+
+
+concept 1:
+
+String a = "nisarg"
+String b = "nisarg"
+
+here, both the variables a and b will be pointing to the same heap memory.
+
+**** String pool ****
+in java, we have a saperate memory allocation for String data type variables
+called as String Pool or Heap Memory (Runtime Data Area)
+
+whenever you create a new String variable with the same value,
+it first checks in the String
+
+now if we change in any one variable, the second variable value will not change
+because of immutability.
+
+strings are immutable in java
+
+-- in java, for the optimization, we have string pool and 
+for security, we have immutability
+
+we don't chage object, we create another object and old object becomes garbage collection
+
+
+
+concept 3:
+- some is done in strring.java 
+
+when you only needs to check value, use '.equals()' method
+
+
+
+concept 4: Pretty printing
+- this is similar to C language i/object
+
+float a = 3.2434234;
+
+System.out.printf("%.2f",a) 
+
+this will print 3.24  // as we have specified 2 digit for decimal
+
+concept 5: '+' operator
+- this operator joins two string
+- we can join to complex objects by providing an empty string
+
+concept 6: String builder
+- it is a separate data type
+- we cannot change string as they are immutable, so every time we do some change 
+in string, it just creates a new string
+but in case of stringbuilder, only one reference is made
+so memory wastage does not occur
+

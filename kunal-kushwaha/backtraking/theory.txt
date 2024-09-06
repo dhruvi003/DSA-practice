@@ -1,0 +1,14 @@
+what is backtracking? how do we know we wish to do backtracking?
+
+Simple question: 
+given 3X3 matrix, standing at (0,0) and reach (2,2). how many ways we can reach?
+- we can only go right and down. so print how many ways we can go?
+
+Possible ways : R R D D , D D R R, R D D R, R D R D
+ How can we take recursion out of this?
+First let's print no of ways for reaching point (2,2)?
+when we've reached the last column, there's only one path downwords and if we've reached last row, there's only one path towards right'
+so we reach last row/col, there's only one way.
+recursion will be like, path till some point + Recursion(Remaining possible paths)
+
+

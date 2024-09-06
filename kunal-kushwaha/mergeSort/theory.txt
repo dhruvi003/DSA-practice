@@ -1,0 +1,20 @@
+divide array in two part, sort first half and after that sort second half
+after sorted, merge the arrays
+
+Steps:
+1) divide array into two parts
+Get both parts sorted via recursion
+2) merge the sorted parts
+
+when one array gets empty while merging, 
+put the remaining array into the sorted array
+
+-we are returning an array from here so the return type will be an array
+
+-base condition is when length of array is 1 
+
+At each level, n elements are getting merged togather
+
+Best time complexity : O(N logN)
+
+

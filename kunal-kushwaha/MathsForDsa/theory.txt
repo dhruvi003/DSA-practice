@@ -1,0 +1,39 @@
+Concept 1: Number System
+- many types like base 2, base 10, base 16 etc
+- computer understands base 2 number System
+- we've been studying base 10 number System
+
+*** Operators ***
+1) Bitwise AND
+- &
+- takes two numbers and performs bitwise AND operation on them. 
+It returns the result of each bit
+
+when you '&' with 1 number, the digits will remain the same
+
+2) OR 
+- Anyone is true, all are true
+
+3) XOR - if and only if
+- ^
+- a ^ 1 = complement of a 
+- a ^ 0 = a
+- a ^ a = 0
+
+Concept 4: Negative number in binary
+- the most significant bit in bits of any number shows whether a number is +/-
+- +/- 0 1 0 1 0 0 0 1
+- __  _ _ _ _ _ _ _ _ 
+
+
+steps: -- 2's complement method
+1) complement of a given number
+2) add 1 to it.
+
+Range of numbers
+- total numbers we can have in 1 byte are 2^7 = 128 possibilities.
+total unique numbers : 2^8
+
+To find range for n bits
+
+-2^(n-1) to 2^(n-1) - 1

@@ -1,0 +1,72 @@
+**** Time complexity ****
+- Time complexity is not equal to time taken
+- Time complexity does not depend on machine
+it is function that tells us how o/p grows as the i/p grows
+if we draw time v/s size graph for any function, it will be showing time complexity
+
+Concept 2:
+
+Always look for the worst case
+always look for the large amount of data
+- We don't care about the actual time
+we are only interested in the growth rate
+Always ignore the less dominating terms
+
+Concept 3:
+constant < log n < n < 2^n (exponent)
+
+Concept 4:
+
+f(N) = O(g(N)) 
+it means,
+
+lim     f(N)/g(N) < inf 
+n->inf  
+
+f(N)/g(N) always gives finite value
+
+
+Concept 5: Big Omega
+- lower bound
+
+lim     f(N)/g(N) > 0
+n->inf
+
+Concept 6: Little Oh and Omega
+
+Big oh:         Little oh:
+f= O(g)         f = O(g)
+f <= g          f < g  // strictly decreasing
+
+Big Omega       Little Omega
+f =  Ω(g)        f = Ω(g)
+f >= g           f > g  // strictly increasing
+
+Concept 6: Space complexity
+
+space complexity = input space + Auxilary space
+auxilary space is extra space we're taking
+
+in binary  search, the space complexity is constant as we increase the size, we only take the 3 variables
+
+Concept 7: Recursive program
+- the space complexity for this program is not constant as
+the functions get stored in stack
+- In recursion, at any level in recursive tree, 
+at any perticular time, no two functions will be able to get in the stack memory 
+at same time
+
+Space complexity for recursive program is equal to 
+the height of the tree
+
+
+Concept 8: Divide and Conquer recurrence
+
+T(x) = a1T(b1*x + E(x)) + a2T(b2*x + E(x)) + ... + akT(bk*x + E(x))
+
+Akra bazzi formula: 
+watch video from 1:27:36 - kunal kushwaha
+
+
+
+
